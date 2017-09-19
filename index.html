@@ -15,6 +15,7 @@
 		width: 900px;
 		margin: auto auto;
 		
+		
 	}
 	
 	.title, .subtitle {
@@ -26,15 +27,18 @@
 	
 	.block {
 		width: 400px;
+		height: 250px;
 		position: relative;
 		border-bottom: 1px dashed black;
 		padding-bottom: 10px;
+		display: inline-block;
+		vertical-align: top;
 		
 	}
 	
 	.subtitle {
 		font-size: 20px;
-		color:yellow;
+		color:gold;
 	}
 	
 	.info, .note {
@@ -43,8 +47,12 @@
 		font-style: italic;
 	}
 	
+	.main {
+		
+	}
+	
 	.special {
-	position: absolute;
+		position: absolute;
 		border: 1px solid black;
 		height: 130px;
 		width: 100px;
@@ -61,7 +69,7 @@
 	}
 	
 	.note {
-		position relative;
+		position: relative;
 		font-weight: bold;
 	}
 	
@@ -78,7 +86,67 @@
 	.note-text {
 		padding-left: 40px;
 	}
+	
+	
+	
+	progress {
+	width: 350px;
+	height: 18px;
+	margin: 10px 5px;
+	display: inline-block;
+	/* Important Thing */
+	-webkit-appearance: none;
+	border: none;
+	}
 
+	progress::-webkit-progress-bar {
+	background: gray;
+	border-radius: 50px;
+	padding: 2px;
+	box-shadow: 0 1px 0px 0 rgba(255, 255, 255, 0.2);
+	}
+
+	progress::-webkit-progress-value {
+	border-radius: 50px;
+	box-shadow: inset 0 1px 1px 0 rgba(255, 255, 255, 0.4);
+	background:
+		-webkit-linear-gradient(45deg, transparent, transparent 33%, rgba(0, 0, 0, 0.1) 33%, rgba(0, 0, 0, 0.1) 66%, transparent 66%),
+		-webkit-linear-gradient(top, rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.2)),
+		-webkit-linear-gradient(left, #ba7448, yellow);
+	background-size: 25px 14px, 100% 100%, 100% 100%;
+	-webkit-animation: move 5s linear 0 infinite;
+	}
+	
+	progress::-moz-progress-bar {
+	background: black;
+	border-radius: 50px;
+	padding: 2px;
+	box-shadow: 0 1px 0px 0 rgba(255, 255, 255, 0.2);
+	
+	}
+	
+	.progress-value {
+		display: inline-block;
+		text-align: right;
+		height: 18px;
+		margin: 10px 0px;
+		vertical-align: top;
+		font-style: italic;
+
+	}
+	
+	.progress-wrapper {
+		position: relative;
+	}
+
+	.progress-text {
+		position:absolute;
+		left: 30px;
+		top: 13px;
+		font-size: 12px;
+		font-style: italic;
+		font-weight: bold;
+	}
 	
 </style>
 <body>
@@ -108,5 +176,70 @@
 				</div>
 			</div>
 		</div>
+		
+		<div class="block">
+			<div class="title">
+				My skills
+			</div>
+			<div class="subtitle">
+				What I am best at.
+			</div>
+			<div class="main">
+				<div class="progress-wrapper">
+					<div class="progress-text">
+						HTML
+					</div>
+					<progress  data-label="50% Complete" max="100" value="50">
+					
+					</progress>
+					<div class="progress-value">
+						50%
+					</div>
+				</div>
+				
+				<div class="progress-wrapper">
+					<div class="progress-text">
+						Web Design
+					</div>
+					<progress  data-label="50% Complete" max="100" value="50">
+					
+					</progress>
+					<div class="progress-value">
+						50%
+					</div>
+				</div>
+				
+				<div class="progress-wrapper">
+					<div class="progress-text">
+						Graphic Design
+					</div>
+					<progress  data-label="50% Complete" max="100" value="50">
+					
+					</progress>
+					<div class="progress-value">
+						50%
+					</div>
+				</div>
+				
+				<div class="progress-wrapper">
+					<div class="progress-text">
+						Typography
+					</div>
+					<progress  data-label="50% Complete" max="100" value="50">
+					
+					</progress>
+					<div class="progress-value">
+						50%
+					</div>
+				</div>
+				
+			</div>
+				
+				
+				
+			</div>
+		</div>
+		
+		
 	</div>
 </body>
