@@ -1,0 +1,170 @@
+body {
+		margin: 0px;
+		padding: 0px;
+	}
+	
+	.container {
+		padding: 20px 40px;
+		width: 900px;
+		margin: auto auto;
+		
+		
+	}
+	
+	.title, .subtitle {
+		font-size: 48px;
+		font-weight: bold;
+		text-transform: uppercase;
+		
+	}
+	
+	.block {
+		width: 400px;
+		height: 250px;
+		position: relative;
+		border-bottom: 1px dashed black;
+		padding-bottom: 10px;
+		padding-right: 20px;
+		display: inline-block;
+		vertical-align: top;
+		
+	}
+	
+	.subtitle {
+		font-size: 20px;
+		color:gold;
+	}
+	
+	.info, .note {
+		font-size: 10px;
+		margin-left: 140px;
+		
+		font-style: italic;
+	}
+	
+	.info b {
+		font-weight: bold;
+	}
+	
+	.awards {
+		margin-left: 0px;
+	}
+	
+	.special {
+		position: absolute;
+		border: 1px solid black;
+		height: 130px;
+		width: 100px;
+		padding: 10px;
+	}
+	
+	.special3 {
+		position: absolute;
+
+		height: 130px;
+		width: 100px;
+		padding: 10px;
+	}
+	
+	.special-background {
+		
+
+		background-image: url("../img/man.jpg");
+		background-repeat: no-repeat;
+		height: 130px;
+		background-size: 100% 100%;
+	}
+	
+	.special3 .block3 {
+		background-image: url("../img/circle.png")
+	}
+	
+	.note {
+		position: relative;
+		font-weight: normal;
+	}
+	
+	.note-image {
+		position: absolute;
+		background-image: url("../img/right.png");
+		background-repeat: no-repeat;
+		height: 130px;
+		background-size: 100% 100%;
+		width: 30px;
+		height: 10px;
+	}
+	
+	.note-text {
+		padding-left: 40px;
+		font-weight: bold;
+	}
+	
+	.separate-award {
+		display: inline-block;
+		vertical-align: top;
+		background-image: url("../img/sticker.png");
+		background-repeat: no-repeat;
+		height: 130px;
+		background-size: 100% 100%;
+		width: 120px;
+		height: 60px;
+	}
+	
+	progress {
+	width: 350px;
+	height: 18px;
+	margin: 10px 5px;
+	display: inline-block;
+	/* Important Thing */
+	-webkit-appearance: none;
+	border: none;
+	}
+
+	progress::-webkit-progress-bar {
+	background: gray;
+	border-radius: 50px;
+	padding: 2px;
+	box-shadow: 0 1px 0px 0 rgba(255, 255, 255, 0.2);
+	}
+
+	progress::-webkit-progress-value {
+	border-radius: 50px;
+	box-shadow: inset 0 1px 1px 0 rgba(255, 255, 255, 0.4);
+	background:
+		-webkit-linear-gradient(45deg, transparent, transparent 33%, rgba(0, 0, 0, 0.1) 33%, rgba(0, 0, 0, 0.1) 66%, transparent 66%),
+		-webkit-linear-gradient(top, rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.2)),
+		-webkit-linear-gradient(left, #ba7448, yellow);
+	background-size: 25px 14px, 100% 100%, 100% 100%;
+	-webkit-animation: move 5s linear 0 infinite;
+	}
+	
+	progress::-moz-progress-bar {
+	background: black;
+	border-radius: 50px;
+	padding: 2px;
+	box-shadow: 0 1px 0px 0 rgba(255, 255, 255, 0.2);
+	
+	}
+	
+	.progress-value {
+		display: inline-block;
+		text-align: right;
+		height: 18px;
+		margin: 10px 0px;
+		vertical-align: top;
+		font-style: italic;
+
+	}
+	
+	.progress-wrapper {
+		position: relative;
+	}
+
+	.progress-text {
+		position:absolute;
+		left: 30px;
+		top: 13px;
+		font-size: 12px;
+		font-style: italic;
+		font-weight: bold;
+	}
