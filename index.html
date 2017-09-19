@@ -31,6 +31,7 @@
 		position: relative;
 		border-bottom: 1px dashed black;
 		padding-bottom: 10px;
+		padding-right: 20px;
 		display: inline-block;
 		vertical-align: top;
 		
@@ -44,16 +45,29 @@
 	.info, .note {
 		font-size: 10px;
 		margin-left: 140px;
+		
 		font-style: italic;
 	}
 	
-	.main {
-		
+	.info b {
+		font-weight: bold;
+	}
+	
+	.awards {
+		margin-left: 0px;
 	}
 	
 	.special {
 		position: absolute;
 		border: 1px solid black;
+		height: 130px;
+		width: 100px;
+		padding: 10px;
+	}
+	
+	.special3 {
+		position: absolute;
+
 		height: 130px;
 		width: 100px;
 		padding: 10px;
@@ -68,9 +82,13 @@
 		background-size: 100% 100%;
 	}
 	
+	.special3 .block3 {
+		background-image: url("static/img/circle.png")
+	}
+	
 	.note {
 		position: relative;
-		font-weight: bold;
+		font-weight: normal;
 	}
 	
 	.note-image {
@@ -85,9 +103,19 @@
 	
 	.note-text {
 		padding-left: 40px;
+		font-weight: bold;
 	}
 	
-	
+	.separate-award {
+		display: inline-block;
+		vertical-align: top;
+		background-image: url("static/img/sticker.png");
+		background-repeat: no-repeat;
+		height: 130px;
+		background-size: 100% 100%;
+		width: 120px;
+		height: 60px;
+	}
 	
 	progress {
 	width: 350px;
@@ -232,14 +260,52 @@
 						50%
 					</div>
 				</div>
-				
+								
 			</div>
-				
-				
+		</div>
+		
+		<div class="block">
+			<div class="title">
+				Services
+			</div>
+			<div class="subtitle">
+				Brand identity, print & web.
+			</div>
+			<div class="main">
+				<div class="special3">
+					<div class="special-background block3">
+					</div>
+				</div>
+				<div class="info">
+				<p>Mei primis praesent persequeris cu, vel legimus detraxit te. Qui in esse insolens, an quem percipitur nec. Et vero honestatis sea, ea mel mazim regione. Eos ad sumo iisque, pri detraxit tractatos eu, mea ad aperiri civibus. Sit ea mediocrem constituam intellegebat, mei in omnes tempor erroribus.</p>
+				</div>
 				
 			</div>
 		</div>
 		
+		<div class="block">
+			<div class="title">
+				Awards
+			</div>
+			<div class="subtitle">
+				My precious collection.
+			</div>
+			<div class="main">
+				
+				<div class="info awards">
+				<p>Mei primis praesent persequeris cu, vel legimus detraxit te. Qui in esse insolens, an quem percipitur nec. Et vero honestatis sea, ea mel mazim regione. Eos ad sumo iisque, pri detraxit tractatos eu, mea ad aperiri civibus. Sit ea mediocrem constituam intellegebat, mei in omnes <strong>tempor erroribus.</strong></p>
+				</div>
+				
+				<div class="separate-award">
+				</div>
+				<div class="separate-award">
+				</div>
+				<div class="separate-award">
+				</div>
+				
+				
+			</div>
+		</div>
 		
 	</div>
 </body>
